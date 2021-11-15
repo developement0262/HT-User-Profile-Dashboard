@@ -1,0 +1,460 @@
+
+.main-img{
+    position: relative;
+}
+.main-img img {
+    height: 80px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+.man-img{
+    width: 70px;
+    height: 70px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    margin: 0 auto;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+}
+.man-img img {
+    height: 64px;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.contant{
+    margin-top: 44px;
+    text-align: center;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.main-card{
+    border-radius: 8px;
+    box-shadow:0 4px 4px 0 rgb(0 0 0 / 8%), 0 1px 12px 0 rgb(0 0 0 / 19%);
+    /*width:249px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+.card-heading h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.card-heading p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #939597;
+    margin: 0;
+}
+.hacker-box{
+    display: flex;
+    align-items: center;
+    height: 26px;
+    justify-content: center;
+    width: 140px;
+    margin: 0 auto;
+    border-radius: 100px;
+    margin-top: 8px;
+    box-shadow:0 4px 4px 0 rgb(0 0 0 / 8%), 0 1px 12px 0 rgb(0 0 0 / 19%);
+}
+.coin-point p{
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+    padding-left: 4px;
+    margin: 0;
+}
+.coin-img img{
+    width: 20px;
+    margin-bottom: 1px;
+}
+.open-work{
+    display: flex;
+    justify-content: space-between;
+}
+.open{position: relative;}
+.open p{
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.toltip {
+    position: absolute;
+    top: -50px;
+    font-size: 10px;
+    background-color: #939393;
+    left: 0%;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+}
+
+.open-work .open p img{
+    cursor: pointer;
+}
+
+
+.open:hover .toltip{
+    display: block;
+    opacity: 1 !important;
+    visibility:visible !important;
+}
+
+.toltip p{
+    color: #fff;
+    margin: 0;
+    font-size: 10px;
+}
+
+/*.open-work {
+    position: relative;
+}
+*/
+
+.open p img{
+    margin-left: 5px;
+    width: 12px;
+}
+.work{
+    margin-top: 12px;
+}
+
+
+.toggle-button-cover
+{
+    display: table-cell;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/*.button-cover
+{
+    height: 100px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px -8px #c5d6d6;
+    border-radius: 4px;
+}
+*/
+/*.button-cover:before
+{
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}*/
+
+.button-cover, .knobs, .layer
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#ht_user_profile .button
+{
+       position: relative;
+    top: 39%;
+    width: 40px;
+    height: 17px;
+    /*margin: 0 0 0 auto;*/
+    overflow: hidden;
+    right: 0;
+    /*margin-right: 12px;*/
+    right: 40px;
+    border: none;
+}
+
+.button.r, .button.r .layer
+{
+    border-radius: 100px;
+}
+
+.button.b2
+{
+    border-radius: 2px;
+}
+
+.checkbox
+{
+    position: relative;
+    width: 40px !important;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+    top: -11px;
+    left: -20px;
+}
+
+.knobs
+{
+    z-index: 2;
+}
+
+.layer
+{
+    width: 100%;
+    background-color: #939597;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+#button-1 .knobs:before
+{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    width: 13px;
+    height: 13px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .checkbox:checked + .knobs:before
+{
+    content: '';
+    left: 25px;
+    background-color: #fff;
+}
+
+#button-1 .checkbox:checked ~ .layer
+{
+    background-color: #f66700;
+}
+
+#button-1 .knobs, #button-1 .knobs:before, #button-1 .layer
+{
+    transition: 0.3s ease all;
+}
+
+
+.connection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.con-lable p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+}
+.con-cou p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #f66700;
+}
+.con-cou p a{
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #f66700;
+}
+.list li{
+    text-align: left;
+    font-size: 10px;
+    color: #f66700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.list li p{
+    color: #f66700;
+    margin: 0;
+}
+.list li p a {
+    text-align: left;
+    font-size: 10px;
+    color: #f66700;
+    top: -2px;
+    position: relative;
+}
+.list li p a:hover {
+    color: #f66700;
+}
+.list li p span {
+    padding-left: 3px;
+}
+.list ul{
+    padding-left: 14px;
+    list-style: circle !important;
+    margin: 0;
+    position: relative;
+}
+#ht_user_profile .list ul::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #f66700;
+    border-radius: 100px;
+    left: 0;
+    top: 4px;
+}
+.achivment{
+    position: relative;
+    text-align: left;
+}
+.achivment::before{
+   content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 61%;
+    height: 1px;
+    background-color: gray;
+}
+.achivment p{
+    font-size: 12px;
+    color: #000;
+    font-weight: 500;
+    padding-right: 11px;
+    margin: 0;
+}
+.learn{
+    text-align: left;
+    margin-top: 8px;
+}
+.learn p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #939597;
+    margin: 8px 8px 8px 0px;
+}
+.learn p a{
+    color:#f66700;
+    text-decoration: underline;
+}
+
+
+.achi-img ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.achi-img ul li{
+    /*margin-right: 10px;*/
+    height: 30px;
+    margin: 0 auto;
+    /*margin-bottom: 0;
+    margin-top: 10px;*/
+}
+.achi-img ul li p{
+    width: 30px;
+    height: 30px;
+    /*background-color: #939597;*/
+    border-radius: 100px;
+    line-height: 29px;
+    font-size: 12px;
+    color: #dfdede;
+    margin: 0;
+    font-weight: 600;
+}
+li.break_achievement p {
+    background-color: #939597;
+}
+.achi-img ul li p a, .achi-img ul li p a:hover{
+    color: #fff;
+}
+.achi-img {
+    margin-top: 5px;
+}
+#ht_user_profile .gamipress-points.gamipress-user-points-hb {
+    padding: 0 !important;
+}
+#ht_user_profile span.gamipress-user-points-amount {
+    font-size: 12px;
+    padding-left: 5px;
+}
+#ht_user_profile span.gamipress-user-points-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+}
+aside.ht_pad_0 {
+    padding: 0;
+}
+
+/*======= img - tooltip =======*/
+
+.achi-img ul li{
+    position: relative;
+}
+
+.achi-img ul li .achive-img {width: 100%;}
+.achi-img ul li  .content-achive {
+   opacity: 0;
+   visibility: hidden;
+    background-color: #000;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.achi-img ul li:hover .content-achive {
+    opacity: 1;
+   visibility: visible;
+}
+.achi-img ul li .content-achive p {
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+    line-height: 14px;  
+}
+
+.achi-img ul li .content-achive:after {content: "";width: 0;height: 0;border: 0 solid transparent;border-right-width: 10px;border-left-width: 10px;border-bottom: 10px solid black;top: -8px;position: absolute;left: 10%;}
+
+.achi-img ul li .achive-img img {
+    width: 30px;
+}
+
+
+/*=============================*/
+
+/**************************/
+/*   Responsive Css   */
+/**************************/
+@media (max-width: 320px){
+    .achivment::before{
+        width: 72%;
+    }
+}
+
+@media (max-width: 425px){
+    .main-card{
+        width: 100%;
+    }
+    .achivment::before{
+        width: 78%;
+    }
+}
+
