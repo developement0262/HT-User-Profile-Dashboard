@@ -1,4 +1,5 @@
 === HT User Profile Dashboard ===
+
 Tags: Buddyboss, User profile dashboard, Widget, Gamipress
 Requires at least: 3.0.1
 Tested up to: 3.4
@@ -18,9 +19,10 @@ This plugin is used to show user profile in widget where user can also check the
 3. Place `[ht_user_profile]` shortcode in your widget or page/posts where you want to show user profile widget.
 
 == Changelog ==
+
 = 1.0.1 =
 * Fixed a notifications issue.
 * Fixed achievement count issue.
 
 = 1.0.0 =
-This version fixes a responsive related bugs.
+* This version fixes a responsive related bugs.
